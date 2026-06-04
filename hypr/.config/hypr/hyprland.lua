@@ -45,7 +45,9 @@ local runner = "rofi -show run"
 -- Or execute your favorite apps at launch like this:
 --
 hl.on("hyprland.start", function () 
-  hl.exec_cmd("mpvpaper -f -o 'no-audio loop panscan=1.0' '*' ~/Pictures/wallpapers/black_hole.jpg")
+  --hl.exec_cmd("mpvpaper -f -o 'no-audio loop panscan=1.0' '*' ~/Pictures/wallpapers/black_hole.jpg")
+  hl.exec_cmd("awww-daemon")
+  hl.exec_cmd("awww img ~/Pictures/wallpapers/black_hole.jpg")
   hl.exec_cmd("waybar")
   hl.exec_cmd("systemctl --user start hyprpolkitagent")
   hl.exec_cmd("hyprctl setcursor Bibata-Modern-Ice 30")
