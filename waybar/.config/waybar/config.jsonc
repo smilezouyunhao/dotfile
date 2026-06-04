@@ -1,8 +1,8 @@
 {
 	"layer": "top",
-	"modules-left": ["custom/launcher","cpu","memory","custom/media","tray"],
+	"modules-left": ["custom/launcher","cpu","memory","mpris","tray"],
 	"modules-center": ["hyprland/workspaces"],
-	"modules-right": ["pulseaudio","clock"],
+	"modules-right": ["network","pulseaudio","clock"],
 	
 	"pulseaudio": {
 		"tooltip": false,
@@ -27,7 +27,7 @@
     },
 	"network": {
 		"tooltip": false,
-		"format-wifi": "  {essid}",
+		"format-wifi": " ",
 		"format-ethernet": ""
 	},
 	"tray":{
@@ -35,7 +35,7 @@
 		"spacing": 10
 	},
     "clock": {
-	"format": " {0:%I:%M %p}   {0:%d/%m/%Y}"
+	"format": " {0:%I:%M %p}   {0:%d/%m/%Y}"
     },
     "cpu": {
         "interval": 15,
@@ -44,7 +44,7 @@
     },
     "memory": {
         "interval": 30,
-        "format": " {}%",
+        "format": " {}%",
         "max-length": 10
     },
     "custom/launcher":{
@@ -52,17 +52,14 @@
         "on-click": "rofi -show drun",
         "on-click-right": "killall rofi"
     },
-    "custom/media": {
-        "interval": 30,
-        "format": "{icon} {}",
-        "return-type": "json",
-        "max-length": 20,
-        "format-icons": {
+    "mpris": {
+        "format": "{player_icon} {dynamic}",
+        "player-icons": {
             "spotify": " ",
             "default": " "
         },
-        "escape": true,
-        "exec": "$HOME/.config/system_scripts/mediaplayer.py 2> /dev/null",
-        "on-click": "playerctl play-pause"
+        "dynamic-len": 25,
+        "on-click": "playerctl play-pause",
+        "max-length": 30
     }
 }
