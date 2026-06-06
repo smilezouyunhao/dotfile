@@ -2,7 +2,7 @@
 	"layer": "top",
 	"modules-left": ["custom/launcher","cpu","memory","mpris","tray"],
 	"modules-center": ["hyprland/workspaces"],
-	"modules-right": ["network","pulseaudio","clock"],
+	"modules-right": ["custom/network","pulseaudio","clock"],
 	
 	"pulseaudio": {
 		"tooltip": false,
@@ -25,10 +25,10 @@
             "5": "5"
         }
     },
-	"network": {
-		"tooltip": false,
-		"format-wifi": "  {signalStrength}%",
-		"format-ethernet": ""
+	"custom/network": {
+		"exec": "~/.config/waybar/scripts/network.sh",
+		"interval": 5,
+		"return-type": "json"
 	},
 	"tray":{
 		"icon-size":18,
