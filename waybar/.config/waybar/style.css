@@ -7,8 +7,10 @@
 }
 
 window#waybar {
-	background: transparent;
-    margin: 0 8px 0 8px;
+	background: #282a36;
+	border-radius: 0 0 12px 12px;
+    margin: 4px;
+    padding: 4px 8px;
 }
 
 window#waybar.hidden {
@@ -27,16 +29,16 @@ window#waybar.hidden {
 #workspaces {
 	margin-top: 6px;
 	margin-left: 12px;
-	margin-bottom: 0px;
+	margin-bottom: 6px;
 	padding: 0 6px;
 	border-radius: 10px;
-	background: #2a2a2a;
+	background: #44475a;
 	transition: none;
 }
 
 #workspaces button {
 	transition: none;
-	color: #7a7a7a;
+	color: #6272a4;
 	background: transparent;
 	font-size: 14px;
 	padding: 0 8px;
@@ -46,28 +48,28 @@ window#waybar.hidden {
 
 #workspaces button.occupied {
 	transition: none;
-	color: #aaaaaa;
+	color: #f8f8f2;
 }
 
 #workspaces button.empty {
 	transition: none;
-	color: #555555;
+	color: #44475a;
 }
 
 #workspaces button.active {
-	color: #ffffff;
-	background: #555555;
+	color: #282a36;
+	background: #bd93f9;
 }
 
 #workspaces button:hover {
 	transition: none;
-	color: #ffffff;
-	background: #444444;
+	color: #f8f8f2;
+	background: #6272a4;
 }
 
 #workspaces button.active:hover {
-	color: #ffffff;
-	background: #666666;
+	color: #282a36;
+	background: #ff79c6;
 }
 
 #network,
@@ -76,10 +78,10 @@ window#waybar.hidden {
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
-	margin-bottom: 0px;
+	margin-bottom: 6px;
 	border-radius: 10px;
 	transition: none;
-	color: #161320;
+	color: #282a36;
 	background: #bd93f9;
 }
 
@@ -88,11 +90,11 @@ window#waybar.hidden {
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
-	margin-bottom: 0px;
+	margin-bottom: 6px;
 	border-radius: 10px;
 	transition: none;
-	color: #1A1826;
-	background: #FAE3B0;
+	color: #282a36;
+	background: #f1fa8c;
 }
 
 #clock {
@@ -101,11 +103,11 @@ window#waybar.hidden {
 	margin-right: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
-	margin-bottom: 0px;
+	margin-bottom: 6px;
 	border-radius: 10px;
 	transition: none;
-	color: #161320;
-	background: #ABE9B3;
+	color: #282a36;
+	background: #50fa7b;
 	/*background: #1A1826;*/
 }
 
@@ -113,35 +115,35 @@ window#waybar.hidden {
 	margin-top: 6px;
 	margin-left: 8px;
 	padding-left: 10px;
-	margin-bottom: 0px;
+	margin-bottom: 6px;
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
-	color: #161320;
-	background: #DDB6F2;
+	color: #282a36;
+	background: #ff79c6;
 }
 #cpu {
 	margin-top: 6px;
 	margin-left: 8px;
 	padding-left: 10px;
-	margin-bottom: 0px;
+	margin-bottom: 6px;
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
-	color: #161320;
-	background: #96CDFB;
+	color: #282a36;
+	background: #8be9fd;
 }
 
 #tray {
 	margin-top: 6px;
 	margin-left: 8px;
 	padding-left: 10px;
-	margin-bottom: 0px;
+	margin-bottom: 6px;
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
-	color: #B5E8E0;
-	background: #161320;
+	color: #f8f8f2;
+	background: #44475a;
 }
 
 #custom-launcher {
@@ -151,9 +153,10 @@ window#waybar.hidden {
 	padding-left: 10px;
 	padding-right: 5px;
 	border-radius: 10px;
+	margin-bottom: 6px;
 	transition: none;
-    color: #89DCEB;
-    background: #161320;
+    color: #bd93f9;
+    background: #44475a;
 }
 
 #mpris {
@@ -161,9 +164,9 @@ window#waybar.hidden {
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
-	margin-bottom: 0px;
+	margin-bottom: 6px;
 	border-radius: 10px;
 	transition: none;
-	color: #161320;
-	background: #F2CDCD;
+	color: #282a36;
+	background: #ffb86c;
 }
