@@ -146,6 +146,19 @@ window#waybar.hidden {
 	background: #44475a;
 }
 
+#custom-power {
+	font-size: 16px;
+	margin-top: 6px;
+	margin-left: 8px;
+	margin-right: 8px;
+	padding: 0 2px 0 7px;
+	margin-bottom: 6px;
+	border-radius: 10px;
+	transition: none;
+	color: #282a36;
+	background: #ff5555;
+}
+
 #custom-launcher {
 	font-size: 24px;
 	margin-top: 6px;

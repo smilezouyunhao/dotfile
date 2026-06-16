@@ -2,7 +2,7 @@
 	"layer": "top",
 	"modules-left": ["custom/launcher","cpu","memory","tray"],
 	"modules-center": ["hyprland/workspaces"],
-	"modules-right": ["custom/network","pulseaudio","clock"],
+	"modules-right": ["custom/network","pulseaudio","clock","custom/power"],
 	
 	"pulseaudio": {
 		"tooltip": false,
@@ -46,6 +46,11 @@
         "interval": 30,
         "format": " {}%",
         "max-length": 10
+    },
+    "custom/power": {
+        "format": " ",
+        "on-click": "~/.config/waybar/scripts/power.sh",
+        "tooltip": false
     },
     "custom/launcher":{
         "format": " ",
