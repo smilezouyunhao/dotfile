@@ -1,6 +1,6 @@
 {
 	"layer": "top",
-	"modules-left": ["custom/launcher","cpu","memory","mpris","tray"],
+	"modules-left": ["custom/launcher","cpu","memory","tray"],
 	"modules-center": ["hyprland/workspaces"],
 	"modules-right": ["custom/network","pulseaudio","clock"],
 	
